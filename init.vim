@@ -23,6 +23,8 @@ set tabstop=4
 set autoindent
 set smartindent
 
+set hidden
+
 autocmd FileType mvn_pom :set indentexpr=""
 
 nmap <C-j> jzz
