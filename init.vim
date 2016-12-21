@@ -19,6 +19,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'eclim'
 call plug#end()
 
+let g:neomake_java_enabled_makers = [ ]
 let g:neomake_typescript_enabled_makers = [ 'tslint' ]
 
 set mouse=
