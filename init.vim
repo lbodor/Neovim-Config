@@ -94,9 +94,11 @@ set tags=tags;/,codex.tags;/
 
 autocmd! BufWritePost * Neomake
 
+let g:neomake_place_signs = 1
+
 let g:neomake_error_sign = {
 	\ 'text': '>',
-	\ 'texthl': 'ErrorMsg',
+	\ 'texthl': 'WarningMsg',
 	\ }
 
 let g:neomake_warning_sign = {
