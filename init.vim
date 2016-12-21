@@ -20,6 +20,9 @@ Plug 'eclim'
 call plug#end()
 
 let g:neomake_typescript_enabled_makers = [ 'tslint' ]
+
+set mouse=
+
 let g:lightline = { 'colorscheme': 'jellybeans' }
 
 set expandtab
