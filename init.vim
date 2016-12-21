@@ -1,6 +1,7 @@
 color Tomorrow-Night
 
 call plug#begin('~/.local/share/nvim/plugged')
+Plug 'airblade/vim-gitgutter'
 Plug 'LnL7/vim-nix'
 Plug 'Valloric/ListToggle'
 Plug 'ludovicchabant/vim-gutentags'
