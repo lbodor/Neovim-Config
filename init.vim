@@ -11,11 +11,15 @@ Plug 'neomake/neomake'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-ragtag'
+Plug 'shougo/vimproc'
+Plug 'leafgarland/typescript-vim'
+Plug 'Quramy/tsuquyomi'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-unimpaired'
 Plug 'eclim'
 call plug#end()
 
+let g:neomake_typescript_enabled_makers = [ 'tslint' ]
 let g:lightline = { 'colorscheme': 'jellybeans' }
 
 set expandtab
