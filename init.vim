@@ -28,6 +28,14 @@ nmap <Leader>td :TsuDefinition<CR>
 nmap <Leader>tt :TsuGoBack<CR>
 nmap <Leader>tr :TsuReferences<CR>
 
+function! DisableEclimXmlAugroup()
+    augroup eclim_xml
+        autocmd!
+    augroup END
+endfunction
+
+autocmd FileType typescript :call DisableEclimXmlAugroup()
+
 set mouse=
 
 let g:lightline = { 'colorscheme': 'jellybeans' }
