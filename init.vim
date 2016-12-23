@@ -22,6 +22,11 @@ call plug#end()
 let g:neomake_java_enabled_makers = [ ]
 let g:neomake_typescript_enabled_makers = [ 'tslint' ]
 
+let g:tsuquyomi_disable_default_mappings = 1
+nmap <Leader>td :TsuDefinition<CR>
+nmap <Leader>tt :TsuGoBack<CR>
+nmap <Leader>tr :TsuReferences<CR>
+
 set mouse=
 
 let g:lightline = { 'colorscheme': 'jellybeans' }
