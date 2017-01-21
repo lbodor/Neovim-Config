@@ -124,6 +124,7 @@ let g:neomake_place_sings = 1
 
 nnoremap <C-p> :FZF<CR>
 set wildmode=longest,list
+set completeopt=menu,longest
 
 let g:inccommand = "split"
 
