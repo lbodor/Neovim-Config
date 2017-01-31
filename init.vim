@@ -22,6 +22,8 @@ call plug#end()
 let g:neomake_java_enabled_makers = [ ]
 let g:neomake_typescript_enabled_makers = [ 'tslint' ]
 
+let g:neomake_sh_shellcheck_args = ['-fgccx']
+
 autocmd Filetype typescript setlocal shiftwidth=2
 let g:tsuquyomi_disable_default_mappings = 1
 nmap <Leader>td :TsuDefinition<CR>
