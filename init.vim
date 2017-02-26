@@ -14,7 +14,6 @@ Plug 'tpope/vim-ragtag'
 Plug 'shougo/vimproc'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
-Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-unimpaired'
 Plug 'eclim'
 call plug#end()
