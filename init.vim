@@ -23,7 +23,7 @@ let g:neomake_typescript_enabled_makers = [ 'tslint' ]
 
 let g:neomake_sh_shellcheck_args = ['-fgccx']
 
-autocmd Filetype typescript setlocal shiftwidth=2
+" autocmd Filetype typescript setlocal shiftwidth=2
 let g:tsuquyomi_disable_default_mappings = 1
 nmap <Leader>td :TsuDefinition<CR>
 nmap <Leader>tt :TsuGoBack<CR>
