@@ -1,3 +1,4 @@
+set termguicolors
 color Tomorrow-Night
 
 call plug#begin('~/.local/share/nvim/plugged')
