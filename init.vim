@@ -2,6 +2,7 @@ set termguicolors
 color Tomorrow-Night
 
 call plug#begin('~/.local/share/nvim/plugged')
+Plug 'gcmt/taboo.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'LnL7/vim-nix'
 Plug 'Valloric/ListToggle'
