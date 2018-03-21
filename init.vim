@@ -131,8 +131,12 @@ let g:neomake_warning_sign = {
 	\ }
 
 let g:neomake_place_sings = 1
+nnoremap <Leader>p :FZF<CR>
+nnoremap <Leader>b :Buffers<CR>
 
-nnoremap <C-p> :FZF<CR>
+command! Buffers call fzf#run(fzf#wrap(
+    \ {'source': map(range(1, bufnr('$')), 'bufname(v:val)')}))
+
 set wildmode=longest,list
 set completeopt=menu,longest
 
