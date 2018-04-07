@@ -23,9 +23,11 @@ Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.s
 Plug 'tpope/vim-ragtag'
 Plug 'shougo/vimproc'
 Plug 'leafgarland/typescript-vim'
+Plug 'mhinz/vim-grepper'
 Plug 'Quramy/tsuquyomi'
 Plug 'tpope/vim-unimpaired'
 Plug 'eclim'
+Plug 'mileszs/ack.vim'
 call plug#end()
 
 let g:LanguageClient_serverCommands = {
