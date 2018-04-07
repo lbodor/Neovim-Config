@@ -49,6 +49,9 @@ nnoremap <silent> gr :call LanguageClient_textDocument_rename()<CR>
 nnoremap <silent> gs :call LanguageClient_textDocument_documentSymbol()<CR>
 let g:LanguageClient_diagnosticsList = 'Quickfix'
 let g:LanguageClient_diagnosticsEnable = 1
+
+set signcolumn=yes
+
 let g:neomake_haskell_enabled_makers = [ ] 
 let g:neomake_java_enabled_makers = [ ]
 let g:neomake_typescript_enabled_makers = [ 'tslint' ]
