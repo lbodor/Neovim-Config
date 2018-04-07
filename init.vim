@@ -26,7 +26,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'mhinz/vim-grepper'
 Plug 'Quramy/tsuquyomi'
 Plug 'tpope/vim-unimpaired'
-Plug 'eclim'
+Plug '~/.local/share/nvim/plugged/eclim'
 Plug 'mileszs/ack.vim'
 call plug#end()
 
