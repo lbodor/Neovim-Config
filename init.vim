@@ -47,6 +47,9 @@ let g:LanguageClient_serverCommands = {
     \ 'haskell': ['hie', '--lsp'],
     \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
 \ }
+
+let g:LanguageClient_autoStart = 1
+
 nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
 nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
 nnoremap <silent> gf :call LanguageClient_textDocument_rangeFormatting()<CR>
