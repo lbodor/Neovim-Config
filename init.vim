@@ -29,7 +29,14 @@ Plug 'tpope/vim-unimpaired'
 Plug '~/.local/share/nvim/plugged/eclim'
 Plug 'davidhalter/jedi-vim'
 Plug 'mileszs/ack.vim'
+Plug 'JamshedVesuna/vim-markdown-preview'
 call plug#end()
+
+
+let vim_markdown_preview_hotkey='<C-m>'
+let vim_markdown_preview_browser='firefox'
+let vim_markdown_preview_pandoc=1
+let vim_markdown_preview_use_xdg_open=1
 
 let g:LanguageClient_serverCommands = {
     \ 'haskell': ['hie', '--lsp'],
