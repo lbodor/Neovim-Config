@@ -31,6 +31,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'mileszs/ack.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'eagletmt/neco-ghc'
+Plug 'ndmitchell/ghcid', { 'rtp': 'plugins/nvim' }
 Plug 'JamshedVesuna/vim-markdown-preview'
 call plug#end()
 
@@ -182,3 +183,5 @@ set completeopt=menu,longest
 let g:inccommand = "split"
 
 set autoindent
+
+" let g:ghcid_command = "ghcid -c 'stack --nix ghci'"
