@@ -19,6 +19,7 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'hashivim/vim-terraform'
 Plug 'juliosueiras/vim-terraform-completion'
 Plug 'aklt/plantuml-syntax'
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'tpope/vim-ragtag'
 Plug 'shougo/vimproc'
 Plug 'leafgarland/typescript-vim'
@@ -27,6 +28,18 @@ Plug 'tpope/vim-unimpaired'
 Plug 'eclim'
 call plug#end()
 
+let g:LanguageClient_serverCommands = {
+    \ 'haskell': ['hie', '--lsp'],
+    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+\ }
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> gf :call LanguageClient_textDocument_rangeFormatting()<CR>
+nnoremap <silent> gr :call LanguageClient_textDocument_rename()<CR>
+nnoremap <silent> gs :call LanguageClient_textDocument_documentSymbol()<CR>
+let g:LanguageClient_diagnosticsList = 'Quickfix'
+let g:LanguageClient_diagnosticsEnable = 1
+let g:neomake_haskell_enabled_makers = [ ] 
 let g:neomake_java_enabled_makers = [ ]
 let g:neomake_typescript_enabled_makers = [ 'tslint' ]
 
