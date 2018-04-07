@@ -29,6 +29,7 @@ Plug 'tpope/vim-unimpaired'
 Plug '~/.local/share/nvim/plugged/eclim'
 Plug 'davidhalter/jedi-vim'
 Plug 'mileszs/ack.vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'JamshedVesuna/vim-markdown-preview'
 call plug#end()
 
@@ -51,6 +52,12 @@ let g:LanguageClient_diagnosticsList = 'Quickfix'
 let g:LanguageClient_diagnosticsEnable = 1
 
 set signcolumn=yes
+
+" deoplete
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#disable_auto_complete = 1
+let g:deoplete#max_menu_width = 80
+inoremap <expr> <C-Space>  deoplete#mappings#manual_complete()
 
 let g:neomake_haskell_enabled_makers = [ ] 
 let g:neomake_java_enabled_makers = [ ]
