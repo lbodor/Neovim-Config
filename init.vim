@@ -61,6 +61,7 @@ let g:LanguageClient_diagnosticsEnable = 1
 set signcolumn=yes
 
 " Completion
+let g:gutentags_exclude_project_root = ['/home/lbodor']
 " Deoplete
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#disable_auto_complete = 1
